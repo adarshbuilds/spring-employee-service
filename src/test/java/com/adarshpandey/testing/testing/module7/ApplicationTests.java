@@ -72,6 +72,10 @@ class ApplicationTests {
 
 	}
 
+	int addTwoNumber(int a,int b){
+		return a+b;
+	}
+
 
 	@Test
 	void testDivideTwoNumber_whenDenominatorIsZero_ThenArithmeticException(){
@@ -88,10 +92,6 @@ class ApplicationTests {
 
 
 
-
-	int addTwoNumber(int a,int b){
-		return a+b;
-	}
 
 	double divideTwoNumber(int a,int b){
 		try {
