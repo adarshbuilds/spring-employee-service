@@ -23,6 +23,7 @@ public class EmployeeController {
     public ResponseEntity<EmployeeDto> createNewEmployee(@RequestBody EmployeeDto employeeDto) {
         EmployeeDto createdEmployeeDto = employeeService.createNewEmployee(employeeDto);
         return new ResponseEntity<>(createdEmployeeDto, HttpStatus.CREATED);
+
     }
 
     @PutMapping("/{id}")
