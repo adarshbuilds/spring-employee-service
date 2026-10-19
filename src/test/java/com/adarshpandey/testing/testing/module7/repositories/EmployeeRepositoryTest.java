@@ -3,6 +3,7 @@ package com.adarshpandey.testing.testing.module7.repositories;
 
 import com.adarshpandey.testing.testing.module7.TestContainerConfiguration;
 import com.adarshpandey.testing.testing.module7.entities.Employee;
+import com.adarshpandey.testing.testing.module7.services.EmployeeService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,7 +16,8 @@ import org.springframework.context.annotation.Import;
 
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*;
+import static org.mockito.Mockito.when;
 
 
 //@SpringBootTest   //this load whole application but we dont need it we only need repository
@@ -75,5 +77,8 @@ class EmployeeRepositoryTest {
         assertThat(employeeList).isEmpty();
 
     }
+
+
+
 
 }
