@@ -62,7 +62,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 
         modelMapper.map(employeeDto, employee);
-        employeeDto.setId(id);
+        employee.setId(id);
 
         Employee savedEmployee = employeeRepository.save(employee);
         log.info("Successfully updated employee with id: {}", id);
