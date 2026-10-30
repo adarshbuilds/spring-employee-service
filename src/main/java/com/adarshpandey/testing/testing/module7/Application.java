@@ -14,7 +14,7 @@ public class Application implements  CommandLineRunner{
 		SpringApplication.run(Application.class, args);
 	}
 
-	private  final DataService dataService;
+//	private  final DataService dataService;
 
 	@Value("${my.variable}")
 	private String myVariable;
@@ -23,7 +23,7 @@ public class Application implements  CommandLineRunner{
 	public void run(String... args) throws Exception {
 
 		System.out.println("my variable: "+myVariable);
-		System.out.println("The data is: "+dataService.getData());
+//		System.out.println("The data is: "+dataService.getData());
 
 	}
 }
